@@ -1,0 +1,275 @@
+@font-face {
+    font-family: Monu;
+    src: url('MonumentExtended-Regular.woff2');
+}
+
+@font-face {
+    font-family: gil;
+    src: url('Gilroy-Regular.woff2');
+}
+
+@font-face {
+    font-family: tiny;
+    src: url("Tiny5-Regular.woff2");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background-color: beige;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+}
+
+body::-webkit-scrollbar {
+    width: 10px;
+    height: 2px;
+    background: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #000;
+}
+
+header {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+nav {
+    border-top: white 3px solid;
+    border-bottom: white 3px solid;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    overflow: hidden;
+}
+
+nav a {
+    font-family: gil;
+    color: white;
+    font-size: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+    border: 1px solid white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+#logo {
+    margin-right: 90px;
+    height: 100%;
+    width: 50%;
+    text-align: center;
+    color: white;
+    font-family: tiny;
+    font-size: 3vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    width: 100%;
+    height: calc(100% - 70px);
+    display: flex;
+    margin-top: 10px;
+}
+
+#left {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.topic {
+    width: 90%;
+    height: fit-content;
+    background-color: white;
+    font-family: gil;
+    display: flex;
+    border: 3px solid black;
+    border-radius: 10px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.topic img {
+    width: 80%;
+    height: 400px;
+    object-fit: cover;
+    border: 4px black solid;
+}
+
+.topic h3 {
+    line-height: 30px;
+}
+
+#right {
+    width: 30%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    font-family: gil;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    border: 5px black solid;
+    border-radius: 10px;
+    margin-right: 30px;
+}
+
+#me {
+    width: 200px;
+    height: 200px;
+    background: url('tusharpic.webp');
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    border: 5px solid black;
+}
+
+#icons {
+    display: flex;
+    width: 40%;
+    height: 60px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#icons i {
+    font-size: 30px;
+    background-color: white;
+    color: black;
+    border: 3px solid black;
+    border-radius: 50%;
+}
+
+#right h4 {
+    padding: 5px;
+    line-height: 40px;
+}
+
+#navigation{
+    background-color: black;
+    display: none;
+    color: white;
+    width: 100%;
+    height: 60px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px;
+    font-size: 30px;
+    position: relative;
+
+}
+.ri-close-circle-line{
+    display: none;
+}
+#nav-menu{
+    display: none;
+    text-transform: uppercase;
+    justify-content: center;
+    align-items: center;
+    font-family: gil;
+    width: 100%;
+    height: 200px;
+    font-size: 10vw;
+    font-weight: 900;
+    text-align: center;
+    background-color: white;
+}
+#resmenu a{
+    color: black;
+}
+
+
+@media (max-width: 600px) {
+    #navigation{display: flex;}
+    nav{
+        display: none;
+    }
+    #logo {
+        width: 30%;
+        color: white;
+        font-family: tiny;
+        font-size: 20vw;
+    }
+    
+    nav {
+        display: none;
+    }
+
+    #logo {
+        font-size: 5vw;
+        margin-right: 5px;
+    }
+
+    header {
+        flex-direction: column;
+    }
+
+    #left,
+    #right {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    #left {
+        height: auto;
+    }
+
+    #right {
+        margin-top: 20px;
+        border: 3px solid black;
+    }
+}
+
+@media (max-width: 480px) {
+    nav a {
+        font-size: 5vw;
+        height: 6vh;
+    }
+
+    #logo {
+        font-size: 6vw;
+    }
+
+    .topic img {
+        width: 90%;
+        height: auto;
+    }
+
+    #icons {
+        width: 60%;
+    }
+
+    #icons i {
+        font-size: 25px;
+    }
+
+    #right h4 {
+        line-height: 30px;
+    }
+}
