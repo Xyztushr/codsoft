@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    background-color: #3c4264;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+h1{
+    font-weight: 800;
+    margin-bottom: 18px;
+    letter-spacing: 18px;
+    color: #ebe3db;
+   
+}
+.cal{
+    width: 30%;
+    height: 70%;
+    /* background-color: aquamarine; */
+}
+.cal .te{
+    width: 100%;
+    height: 15%;
+    margin-bottom: 15px;
+    border-radius: 20%;
+}
+.te input{
+    border: #191c33 solid 3px;
+    background-color: #191c33;
+    color: azure;
+    text-align: end;
+    padding: 15px;
+    font-size: 2vw;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px ;
+}
+.cal .num{
+    width: 100%;
+    height: 80%;
+    overflow: hidden;
+    border-radius: 8px ;
+    background-color: #252944;
+    padding: 10px;
+} 
+.val{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    
+}
+.val button{
+    background-color: #ebe3db;
+    text-transform: uppercase;
+    font-size: 1.4vw;
+    font-weight: 900;
+    margin: 8.5px 2px;
+    width: 7vw;
+    height: 8vh;
+    border-radius: 10px;
+}
+.val span button{
+    width: 14vw;
+    margin: 0px 5px;
+    background-color: #e8002e;
+    color: white;
+}
+.val div button{
+    width: 14vw;
+    margin: 0px 5px;
+    background-color: #656c99;
+    color: white;
+    letter-spacing: 3px;
+
+}
+@media (max-width:700px) {
+    .cal{
+        width: 90%;
+        height: 65vmax;
+    }    
+    .num{
+        width: 100%;
+        height: 100%;
+    }
+    .val button{
+        font-size: 20px;
+        width: 50vw;
+    }
+    .val span button{
+        width: 42vw;
+        margin: 0px 0px;
+    }
+    .val div button{
+        width: 42vw;
+        margin: 0px 0px;
+    }
+    .te input{
+    font-size: 30px;
+    }
+}
+.val #red button{
+    background-color: #696599;
+}

@@ -1,0 +1,388 @@
+@font-face {
+    font-family: gil;
+    src: url('asset/Gilroy-Regular.ttf');
+}
+
+* {
+    font-family: gil;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body::-webkit-scrollbar {
+    background: transparent;
+    width: 8px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #505F98;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    width: 100%;
+    height: 100%;
+    background: url('asset/design.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+nav i {
+    display: none;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+
+    width: 100%;
+    height: 70px;
+    color: #505F98;
+    align-items: center;
+    padding: 0px 10vw;
+}
+
+nav button {
+    background-color: #282f4b;
+    width: 200px;
+    height: 40px;
+    border: none;
+    color: white;
+    border-radius: 4px;
+}
+
+#nav-items {
+    width: 30%;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+
+nav h3 {
+
+    font-size: 1.8rem;
+    font-weight: 900;
+}
+
+nav a {
+    padding-right: 3vw;
+    color: #505F98;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+nav a:hover {}
+
+#nav-zone {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    z-index: 99;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+}
+
+#nav-zone a {
+    font-size: 3rem;
+    color: white;
+    text-decoration: none;
+}
+
+#nav-zone i {
+    font-size: 3rem;
+    color: white;
+}
+
+#first-page {
+
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-items: center;
+    align-content: center;
+    height: calc(100% - 70px);
+    font-family: gil;
+}
+
+#sideone {
+    width: 80%;
+    height: 100%;
+}
+
+#sideone h1 {
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+#sideone p {
+    padding: 30px 0px;
+    line-height: 7vh;
+    font-size: 1rem;
+}
+
+#first-btn button {
+    cursor: pointer;
+}
+
+#first-btn button:first-child {
+    width: 13vw;
+    height: 40px;
+    background-color: #282f4b;
+    border: none;
+    color: white;
+    border-radius: 3px;
+}
+
+#first-btn button:nth-last-child(1) {
+    width: 13vw;
+    height: 40px;
+    background-color: white;
+    border: black 1px solid;
+    color: black;
+    border-radius: 3px;
+}
+
+#middle {
+    width: 100%;
+    height: 100%;
+    background: url('asset/design2.svg');
+    background-repeat: no-repeat;
+    display: grid;
+}
+
+#second-page {
+    width: 100%;
+    height: 100%;
+    display: flex;
+
+    justify-content: flex-end;
+
+}
+
+#text-second {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0% 8%;
+    width: 55%;
+    height: 100%;
+}
+
+#text-second h1 {
+    font-size: 3.5rem;
+}
+
+#text-second p {
+    font-size: 1.1rem;
+    line-height: 40px;
+}
+
+footer {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 80% 80% 20%;
+}
+
+#foot {
+    width: 70%;
+    height: 60%;
+
+}
+
+#foot:first-child {
+    font-size: 1.4rem;
+}
+
+#footertwo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#footerone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#footerone img {
+    width: 600px;
+}
+
+#lower {
+    width: 100%;
+    height: 20vh;
+    background-color: black;
+    grid-column: 1 / 3;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+}
+
+@media (max-width:600px) {
+    header {
+        height: 100%;
+    }
+
+    nav {
+        width: 100%;
+        padding: 0px 0vw;
+        background: #282f4bb7;
+        color: white;
+        backdrop-filter: blur(10px);
+        font-size: 2rem;
+        padding: 0px 10px;
+    }
+
+    nav i {
+        display: block;
+    }
+
+    nav button {
+        display: none;
+    }
+
+    #nav-items {
+        display: none;
+    }
+
+    nav h3 {
+
+        font-weight: 900;
+    }
+
+    nav a {
+        padding-right: 3vw;
+        color: #505F98;
+        text-decoration: none;
+        font-weight: 600;
+    }
+
+    #first-page {
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        grid-template-columns: 100%;
+        backdrop-filter: blur(3px);
+        background-color: rgba(255, 255, 255, 0.21);
+    }
+
+    #sideone {
+        width: 100%;
+        height: 50%;
+    }
+
+    #sideone h1 {
+        line-height: 8vh;
+        font-size: 3rem;
+        font-weight: 900;
+    }
+
+    #sideone p {
+        line-height: 5vh;
+        padding: 0px;
+
+        font-size: 1.3rem;
+    }
+
+    #first-btn button {
+        cursor: pointer;
+    }
+
+    #first-btn button:first-child {
+        width: 150px;
+        height: 50px;
+        background-color: #282f4b;
+        border: none;
+        color: white;
+        border-radius: 3px;
+    }
+
+    #first-btn button:nth-last-child(1) {
+        width: 150px;
+        height: 50px;
+    }
+
+    #middle {
+        background-size: cover;
+        background-position: center;
+        height: fit-content;
+    }
+
+    #second-page {
+
+        background-color: rgba(255, 255, 255, 0.384);
+        backdrop-filter: blur(3px);
+    }
+
+    #text-second {
+        padding: 0%;
+        text-align: center;
+        width: 100%;
+        height: fit-content;
+
+    }
+
+    #text-second h1 {
+        font-size: 3.5rem;
+    }
+
+    #text-second p {
+        font-size: 1.1rem;
+        line-height: 5vh;
+    }
+
+    footer {
+        text-align: center;
+        width: 100%;
+        height: 0%;
+        grid-template-columns: 100%;
+        grid-template-rows: 80% 20%;
+    }
+
+    #foot {
+        display: none;
+
+    }
+
+    #footertwo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #footerone {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #footerone img {
+        display: none;
+    }
+
+    #lower {
+        flex-direction: column;
+        padding: 20px;
+    }
+}
